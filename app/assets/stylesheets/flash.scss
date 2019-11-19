@@ -1,0 +1,53 @@
+.alert {
+  text-align: center;
+  padding: 10px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+}
+
+.alert-success, .alert-notice {
+  color: #1ab93f;
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+}
+
+.alert-error, .alert-alert {
+  color: #721c24;
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+  
+}
+
+h2 {
+  color: red;
+  font-family: monospace;
+
+}
+
+li {
+  color: darkred;
+  font-family: monospace;
+  font-size: 16px;
+}
+
+.divy {
+  color: red;
+  font-family: monospace;
+}
+
+.h1
+h1{
+  color: rgb(179, 15, 15);
+  font-family: monospace;
+}
+
+.h2
+h2 {
+  color: darkred;
+  font-family: monospace;
+}
+
+.white-text {
+  color: white;
+}
+

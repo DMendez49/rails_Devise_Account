@@ -1,0 +1,25 @@
+<h2><%= current_user.first_name %><%= current_user.last_name %> Accounts</h2>
+<hr />
+
+<div class="divy">
+<%= link_to "Add Account", new_account_path %>
+<br/>
+<h3><%= @accounts .length == 0 ? "No Accounts":nil %><h3>
+
+<ul>
+<% @accounts.each do |account| %>
+<li>
+  <%= account.name %> - $<%= account.cost %>
+  <li>
+  <% end %>
+</div>
+
+<div class = "field, btn waves-effect waves-dark, #03a9f4 light-blue">
+<%= link_to "Back", :back %>
+</div>
+
+<div class = "field, btn waves-effect waves-dark, #03a9f4 light-blue">
+<%= link_to "log out", destroy_user_session_path	, method: :delete %>
+</div>
+
+  </ul>

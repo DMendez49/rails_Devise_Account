@@ -1,0 +1,24 @@
+
+<div class="h1">
+<h1>Add Account</h1>
+
+</div>
+<%= form_with(model: @account, local: true) do |f| %>
+<div class="feild">
+  <%= f.label :name %>
+  <%= f.text_field :name, required: true, placeholder: "Account Name "%>
+</div>
+
+<div class = "field">
+  <%= f.label :cost %>
+  <%= f.number_field :cost, placeholder:"How much did it cost you", min: 0 %>
+</div>
+
+<%= f.submit class: "btn waves-effect waves-dark, #03a9f4 light-blue"%>
+
+<div class = "field, btn waves-effect waves-dark, #03a9f4 light-blue">
+  <%= link_to "Back", :back %>
+</div>
+
+
+<% end %>
